@@ -1,12 +1,11 @@
-import options from "./options"
+import Option from "./Option";
+import options from "./options";
 function Select() {
   return (
     <select>
       {options.map((option) => (
-          <option key={option.id} value={option.value}>
-            {option.value}
-          </option>
-        ))}
+        <Option key={option.id} value={option.value} />
+      ))}
     </select>
   );
 }

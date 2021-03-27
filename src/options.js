@@ -1,15 +1,15 @@
 const options = [
   {
     id: 1,
-    value: "option 1",
+    value: "1",
   },
   {
     id: 2,
-    value: "option 2",
+    value: "2",
   },
   {
     id: 3,
-    value: "option 3",
+    value: "3",
   },
 ];
 

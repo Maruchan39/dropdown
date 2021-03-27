@@ -1,6 +1,6 @@
 function Option({value}) {
   return <option>
-      {value}
+      Option{value}
   </option>
 }
 
