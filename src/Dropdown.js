@@ -1,8 +1,7 @@
 import Select from "./Select";
 import React, { useState } from "react";
-import options from "./options";
 function Dropdown() {
-  const [value, setValue] = useState(options[0].value);
+  const [value, setValue] = useState("Please select your option");
 
   return (
     <Select value={value} onChange={(e) => setValue(e.currentTarget.value)} />
