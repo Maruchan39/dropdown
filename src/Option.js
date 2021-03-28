@@ -1,7 +1,7 @@
-function Option({value}) {
-  return <option>
+function Option({value, toggleOptionsOpen}) {
+  return <div  onClick={() => toggleOptionsOpen()}>
       Option{value}
-  </option>
+  </div>
 }
 
 export default Option;

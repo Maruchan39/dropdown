@@ -1,13 +1,16 @@
 import Option from "./Option";
 import options from "./options";
-function Select({value}) {
+function Select({ toggleOptionsOpen }) {
   return (
-    <select>
-        <option value="" disabled selected hidden>{value}</option>
+    <div>
       {options.map((option) => (
-        <Option key={option.id} value={option.value} />
+        <Option
+        toggleOptionsOpen={toggleOptionsOpen}
+          key={option.id}
+          value={option.value}
+        />
       ))}
-    </select>
+    </div>
   );
 }
 
