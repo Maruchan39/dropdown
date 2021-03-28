@@ -5,8 +5,8 @@ function Select({ toggleOptionsOpen, setValue }) {
     <div>
       {options.map((option) => (
         <Option
-        toggleOptionsOpen={toggleOptionsOpen}
-        setValue={setValue}
+          toggleOptionsOpen={toggleOptionsOpen}
+          setValue={setValue}
           key={option.id}
           value={option.value}
         />

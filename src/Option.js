@@ -1,8 +1,14 @@
-function Option({value, toggleOptionsOpen, setValue}) {
-  return <div  onClick={() => {toggleOptionsOpen();setValue(value)}
-}>
+function Option({ value, toggleOptionsOpen, setValue }) {
+  return (
+    <div
+      onClick={() => {
+        toggleOptionsOpen();
+        setValue(value);
+      }}
+    >
       {value}
-  </div>
+    </div>
+  );
 }
 
 export default Option;
