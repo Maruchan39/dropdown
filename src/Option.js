@@ -1,6 +1,7 @@
-function Option({value, toggleOptionsOpen}) {
-  return <div  onClick={() => toggleOptionsOpen()}>
-      Option{value}
+function Option({value, toggleOptionsOpen, setValue}) {
+  return <div  onClick={() => {toggleOptionsOpen();setValue(value)}
+}>
+      {value}
   </div>
 }
 

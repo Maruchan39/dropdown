@@ -10,10 +10,7 @@ function Dropdown() {
   return (
     <div>
       {optionsOpen ? (
-        <Select toggleOptionsOpen={toggleOptionsOpen}
-          value={value}
-          onChange={(e) => setValue(e.currentTarget.value)}
-        />
+        <Select toggleOptionsOpen={toggleOptionsOpen} setValue={setValue} />
       ) : (
         <div onClick={() => toggleOptionsOpen()}>{value}</div>
       )}
